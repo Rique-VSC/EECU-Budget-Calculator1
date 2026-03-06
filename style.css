@@ -14,19 +14,39 @@
 }
 
 /* top bar */
-h2 {
+nav {
     background-color: var(--nav-color);
-    flex: 1;
     padding: 20px;
-}
-/* flexbox */
-.needs-tab, .wants-tab, .savings-tab {
-    display: flex;
-} /* not sure why the h3 are not also displayed as flex, can change layout to grid later if you want */
+    margin-bottom: 30px;
+    width: 100%;
 
+}
+
+.main1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pie-chart {
+    margin-left: 5%;
+}
+
+.image-section {
+    margin-right: 5%;
+}
 /* needs section */
 .needs-tab h3 { 
-    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--needs-color);
     border-radius: 24px;
     border: 1px solid #000;
@@ -35,7 +55,10 @@ h2 {
 }
 /* wants section */
 .wants-tab h3 { 
-    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--wants-color);
     border-radius: 24px;
     border: 1px solid #000;
@@ -44,7 +67,10 @@ h2 {
 }
 /* savings section */
 .savings-tab h3 { 
-    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--savings-color);
     border-radius: 24px;
     border: 1px solid #000;
@@ -53,20 +79,48 @@ h2 {
 }
 /* expenses section */
 .expenses-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     width: 250px;
-    height: 450px;
     background: var(--background-color);
     border-radius: 24px;
+    padding-top: 50px;
 }
 .add-new {
     width: 414px;
-    height: 136px;
     border-radius: 24px;
     background: var(--background-color)
 }
 .calculations-section {
     width: 414px;
-    height: 286px;
     border-radius: 24px;
     background: var(--background-color)
+}
+
+.instructions {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: 5%;
+}
+
+.needs-tab, .wants-tab, .savings-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-expense {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.add-new {
+    padding: 20px;
+}
+
+.calculations-section {
+    padding: 20px;
 }
