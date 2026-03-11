@@ -43,6 +43,7 @@ margin-left: 31px;
         flex-direction: column;
         align-items: center;
     }
+    
     font-size: 19px;
 }
 
@@ -56,6 +57,9 @@ margin-left: 31px;
     background: var(--background-color);
     border-radius: 24px;
     margin: 1rem;
+    width: 400px;
+    height: fit-content;
+    
 } /* not sure why the h3 are not also displayed as flex, can change layout to grid later if you want */
 
 .income-tab {
@@ -103,8 +107,8 @@ margin-left: 31px;
 }
 
 .expenses-section input {
-    width: 75px;
-    height: 29px;
+    width: 150px;
+    height: 24px;
 }
 
 .add-new {
@@ -214,25 +218,38 @@ margin-left: 31px;
     margin-top: 30px;
 }
 
-#expense-total {
+.expense-total {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-#expense-total div {
+.expense-total div {
     background-color: white;
     width: 141px;
-    height: 29px;
+    height: 39px;
 }
 
 #expenses input {
     margin-left: 16px;
 }
 
-#Wants50{
+label{
 display: flex;
 flex-direction: column;
 font-size: 24px;
+margin: -11%;
+margin-left: 200px;
+}
 
+input{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.Totals{
+font-size: 30px;
+margin-left: 10%;
+margin-top: 1%;
 }
